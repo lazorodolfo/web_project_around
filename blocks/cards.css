@@ -1,0 +1,89 @@
+.cards {
+  box-sizing: border-box;
+  color: black;
+  width: 100%;
+}
+
+.cards__container {
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 18px;
+  grid-row-gap: 21px;
+}
+
+.cards__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 361px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.cards__card_image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.cards__card_text {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards__card_name {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29.05px;
+  margin-left: 21px;
+  width: 246px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cards__card_heart {
+  width: 20.76px;
+  height: 18.13px;
+  background-image: url("../../../../images/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 22.24px;
+  cursor: pointer;
+}
+
+.cards__card_heart:hover {
+  background-image: url("../../../../images/heart2.svg");
+}
+
+@media screen and (min-width: 320px) and (max-width: 720px) {
+  .cards__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    width: calc(100% - 38px);
+    margin: 0 auto;
+  }
+
+  .cards__card_image {
+    width: 302.75px;
+    height: 302.75px;
+    object-fit: cover;
+  }
+
+  .cards__card_heart {
+    margin-right: 15px;
+  }
+}
