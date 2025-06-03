@@ -24,12 +24,12 @@
   overflow: hidden;
 }
 
-.cards__card_image {
+.cards__card-image {
   width: 100%;
   object-fit: contain;
 }
 
-.cards__card_text {
+.cards__card-text {
   width: 100%;
   height: 100%;
   background-color: white;
@@ -40,7 +40,7 @@
   align-items: center;
 }
 
-.cards__card_name {
+.cards__card-name {
   font-weight: 900;
   font-size: 24px;
   line-height: 29.05px;
@@ -51,7 +51,7 @@
   overflow: hidden;
 }
 
-.cards__card_heart {
+.cards__card-heart {
   width: 20.76px;
   height: 18.13px;
   background-image: url("../../../../images/heart.svg");
@@ -77,13 +77,13 @@
     margin: 0 auto;
   }
 
-  .cards__card_image {
+  .cards__card-image {
     width: 302.75px;
     height: 302.75px;
     object-fit: cover;
   }
 
-  .cards__card_heart {
+  .cards__card-heart {
     margin-right: 15px;
   }
 }

@@ -1,6 +1,6 @@
 //Declaro variables a utilizar
-let popup_open = document.querySelector(".profile__edit");
-let popup_close = document.querySelector(".popup__close");
+let popupOpen = document.querySelector(".profile__edit");
+let popupClose = document.querySelector(".popup__close");
 let overlay = document.querySelector(".overlay");
 
 let nombre = document.querySelector(".profile__text");
@@ -26,6 +26,6 @@ function saveChanges(evt) {
   toggleOverlay();
 }
 
-popup_close.addEventListener("click", toggleOverlay);
-popup_open.addEventListener("click", toggleOverlay);
+popupClose.addEventListener("click", toggleOverlay);
+popupOpen.addEventListener("click", toggleOverlay);
 botonGuardar.addEventListener("click", saveChanges);
