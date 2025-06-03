@@ -40,7 +40,7 @@
 
 ### Host
 
-- Nuestra página ha sido alojada en Github Pages en el siguiente [enlace](https://github.com/lazorodolfo/web_project_around.git)
+- Nuestra página ha sido alojada en Github Pages en el siguiente [enlace](https://lazorodolfo.github.io/web_project_around/)
 
 ### Validadores
 
