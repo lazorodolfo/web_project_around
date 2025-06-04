@@ -72,6 +72,8 @@
   .popup__close {
     width: 26px;
     height: 26px;
+    right: 20px;
+    top: -55px;
   }
 
   .popup__titulo {

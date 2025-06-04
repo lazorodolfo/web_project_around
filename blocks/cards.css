@@ -5,7 +5,6 @@
 }
 
 .cards__container {
-  width: 100%;
   margin: 0;
   list-style: none;
   padding-left: 0;
@@ -16,9 +15,9 @@
 }
 
 .cards__card {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   height: 361px;
   border-radius: 15px;
   overflow: hidden;
@@ -41,6 +40,7 @@
 }
 
 .cards__card-name {
+  font-family: "Inter", Arial, sans-serif;
   font-weight: 900;
   font-size: 24px;
   line-height: 29.05px;
@@ -66,24 +66,57 @@
   background-image: url("../../../../images/heart2.svg");
 }
 
-@media screen and (min-width: 320px) and (max-width: 720px) {
+@media screen and (min-width: 628px) and (max-width: 848px) {
   .cards__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 20px;
-    width: calc(100% - 38px);
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 18px;
+    grid-row-gap: 21px;
+    justify-items: center;
+    width: 582px;
     margin: 0 auto;
   }
 
+  .cards__card {
+    width: 282px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: antiquewhite;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 627px) {
+  .cards__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 282px;
+    margin: 0 auto;
+  }
+
+  .cards__card {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: antiquewhite;
+  }
+
   .cards__card-image {
-    width: 302.75px;
-    height: 302.75px;
+    width: 100%;
     object-fit: cover;
+  }
+
+  .cards__card-text {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cards__card-name {
+    margin: 0;
+    width: auto;
   }
 
   .cards__card-heart {
     margin-right: 15px;
+    margin-left: 10px;
   }
 }
