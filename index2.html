@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pages/index.css" />
+    <title>Around the US</title>
+  </head>
+  <body class="site">
+    <div class="page">
+      <header class="header">
+        <h1 class="header__title">
+          <a href="#" class="header__link"
+            ><img class="header__logo" src="./images/logo.svg" alt="logo"
+          /></a>
+        </h1>
+      </header>
+      <main>
+        <section class="profile">
+          <div class="profile__avatar-container">
+            <img
+              class="profile__avatar"
+              src="./images/jacques2.jpg"
+              alt="Imagen de perfile de Jackes Cousteu"
+            />
+          </div>
+          <div class="profile__info">
+            <h2 class="profile__name">
+              <span class="profile__text">Jacques Cousteau</span>
+              <img
+                class="profile__edit"
+                src="./images/edit-avatar.svg"
+                alt="Icono de edición de nombre"
+              />
+            </h2>
+            <p class="profile__description">Explorador</p>
+          </div>
+          <div class="profile__add"></div>
+        </section>
+        <section class="cards">
+          <ul class="cards__container">
+            <li class="cards__card">
+              <img
+                src="./images/yosemite-valley-card.jpg"
+                class="cards__card-image"
+                alt="Imagen del valle de Yosemite"
+              />
+              <div class="cards__card-text">
+                <p class="cards__card-name">Yosemite Valley</p>
+                <div class="cards__card-heart"></div>
+              </div>
+            </li>
+            <li class="cards__card">
+              <img
+                src="./images/lake-louise-card.png"
+                class="cards__card-image"
+                alt="Imagen del lago Louise"
+              />
+              <div class="cards__card-text">
+                <p class="cards__card-name">Lake Louse</p>
+                <div class="cards__card-heart"></div>
+              </div>
+            </li>
+            <li class="cards__card">
+              <img
+                src="./images/bald-mountains-card.png"
+                class="cards__card-image"
+                alt="Crepúsculo en las montañanas Bald"
+              />
+              <div class="cards__card-text">
+                <p class="cards__card-name">Bald Mountains</p>
+                <div class="cards__card-heart"></div>
+              </div>
+            </li>
+            <li class="cards__card">
+              <img
+                src="./images/latemar-card.png"
+                class="cards__card-image"
+                alt="Imagen de una noche con cielo estrellado en las montañas Latemar"
+              />
+              <div class="cards__card-text">
+                <p class="cards__card-name">Latemar</p>
+                <div class="cards__card-heart"></div>
+              </div>
+            </li>
+            <li class="cards__card">
+              <img
+                src="./images/vanoise-card.png"
+                class="cards__card-image"
+                alt="Imagen de un lago al lado de una montaña en el parque nacional de Vanoise"
+              />
+              <div class="cards__card-text">
+                <p class="cards__card-name">Vanoise Nationa...</p>
+                <div class="cards__card-heart"></div>
+              </div>
+            </li>
+            <li class="cards__card">
+              <img
+                src="./images/lake-dibraies-card.png"
+                class="cards__card-image"
+                alt="Imagen de unos botes en el lago di Braies"
+              />
+              <div class="cards__card-text">
+                <p class="cards__card-name">Lago di Braies</p>
+                <div class="cards__card-heart"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer class="footer">&copy;2020 Around The U.S.</footer>
+    </div>
+
+    <!-- Popup / Overlay-->
+    <div class="overlay overlay_hidden">
+      <div class="popup">
+        <button type="button" class="popup__close">
+          <img
+            class="popup__close-icon"
+            src="./images/close-icon.svg"
+            alt="Icono de cerrar"
+          />
+        </button>
+        <h2 class="popup__titulo">Editar Perfil</h2>
+        <form class="popup__form">
+          <input
+            class="popup__input popup__input_name"
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Nombre"
+            required
+          />
+          <input
+            class="popup__input popup__input_acerca"
+            type="text"
+            id="acerca"
+            name="acerca"
+            placeholder="Acerca de mi"
+            required
+          />
+          <button type="submit" class="popup__save">Guardar</button>
+        </form>
+      </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

@@ -38,81 +38,30 @@
           <div class="profile__add"></div>
         </section>
         <section class="cards">
-          <ul class="cards__container">
-            <li class="cards__card">
-              <img
-                src="./images/yosemite-valley-card.jpg"
-                class="cards__card-image"
-                alt="Imagen del valle de Yosemite"
-              />
-              <div class="cards__card-text">
-                <p class="cards__card-name">Yosemite Valley</p>
-                <div class="cards__card-heart"></div>
-              </div>
-            </li>
-            <li class="cards__card">
-              <img
-                src="./images/lake-louise-card.png"
-                class="cards__card-image"
-                alt="Imagen del lago Louise"
-              />
-              <div class="cards__card-text">
-                <p class="cards__card-name">Lake Louse</p>
-                <div class="cards__card-heart"></div>
-              </div>
-            </li>
-            <li class="cards__card">
-              <img
-                src="./images/bald-mountains-card.png"
-                class="cards__card-image"
-                alt="Crepúsculo en las montañanas Bald"
-              />
-              <div class="cards__card-text">
-                <p class="cards__card-name">Bald Mountains</p>
-                <div class="cards__card-heart"></div>
-              </div>
-            </li>
-            <li class="cards__card">
-              <img
-                src="./images/latemar-card.png"
-                class="cards__card-image"
-                alt="Imagen de una noche con cielo estrellado en las montañas Latemar"
-              />
-              <div class="cards__card-text">
-                <p class="cards__card-name">Latemar</p>
-                <div class="cards__card-heart"></div>
-              </div>
-            </li>
-            <li class="cards__card">
-              <img
-                src="./images/vanoise-card.png"
-                class="cards__card-image"
-                alt="Imagen de un lago al lado de una montaña en el parque nacional de Vanoise"
-              />
-              <div class="cards__card-text">
-                <p class="cards__card-name">Vanoise Nationa...</p>
-                <div class="cards__card-heart"></div>
-              </div>
-            </li>
-            <li class="cards__card">
-              <img
-                src="./images/lake-dibraies-card.png"
-                class="cards__card-image"
-                alt="Imagen de unos botes en el lago di Braies"
-              />
-              <div class="cards__card-text">
-                <p class="cards__card-name">Lago di Braies</p>
-                <div class="cards__card-heart"></div>
-              </div>
-            </li>
-          </ul>
+          <ul class="cards__container"></ul>
         </section>
       </main>
       <footer class="footer">&copy;2020 Around The U.S.</footer>
     </div>
 
     <!-- Popup / Overlay-->
-    <div class="overlay overlay_hidden">
+    <div class="overlay overlay_hidden"></div>
+
+    <!-- Template de Card -->
+    <template id="template-card">
+      <li class="cards__card">
+        <div class="cards__card_bin"></div>
+        <div class="cards__img-container">
+          <img class="cards__card-image" />
+        </div>
+        <div class="cards__card-text">
+          <p class="cards__card-name"></p>
+          <div class="cards__card-heart"></div>
+        </div>
+      </li>
+    </template>
+
+    <template id="template-popup">
       <div class="popup">
         <button type="button" class="popup__close">
           <img
@@ -121,28 +70,30 @@
             alt="Icono de cerrar"
           />
         </button>
-        <h2 class="popup__titulo">Editar Perfil</h2>
+        <h2 class="popup__titulo"></h2>
         <form class="popup__form">
-          <input
-            class="popup__input popup__input_name"
-            type="text"
-            id="nombre"
-            name="nombre"
-            placeholder="Nombre"
-            required
-          />
-          <input
-            class="popup__input popup__input_acerca"
-            type="text"
-            id="acerca"
-            name="acerca"
-            placeholder="Acerca de mi"
-            required
-          />
-          <button type="submit" class="popup__save">Guardar</button>
+          <input class="popup__input popup__input_uno" type="text" required />
+          <input class="popup__input popup__input_dos" type="text" required />
+          <button type="submit" class="popup__save"></button>
         </form>
       </div>
-    </div>
+    </template>
+
+    <template id="template-imagen-emergente">
+      <div class="emergente">
+        <button type="button" class="emergente__close">
+          <img
+            class="emergente__close-icon"
+            src="./images/close-icon.svg"
+            alt="Icono de cerrar"
+          />
+        </button>
+        <img class="emergente__image" />
+        <p class="emergente__text"></p>
+      </div>
+    </template>
+
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/script2.js"></script>
   </body>
 </html>

@@ -41,11 +41,11 @@
   padding-bottom: 13px;
 }
 
-.popup__input_name {
+.popup__input_uno {
   margin-bottom: 29.74px;
 }
 
-.popup__input_acerca {
+.popup__input_dos {
   margin-bottom: 48px;
 }
 
@@ -87,7 +87,7 @@
     padding-bottom: 9px;
   }
 
-  .popup__input_name {
+  .popup__input_uno {
     margin-bottom: 46px;
   }
 }
